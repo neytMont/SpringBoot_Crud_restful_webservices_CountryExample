@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/save}" th:object="${country}" method="post">
+Country Name:<input type="text" th:field="*{countryName}" /><br>
+Country Capital:<input type="text" th:field="*{countryCapital}"/><br>
+Country Population:<input type="text" th:field="*{countryPopulation}"/><br>
+
+<button type="submit"> Save </button>
+</form>
+</body>
+</html>
